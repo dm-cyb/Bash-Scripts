@@ -2,7 +2,7 @@
 #this is a menu designed for an administrator
 #this menu provides simplified user management capabilities
 #it also comes equipped with a function to create a backup of any user's home directory 
-#AUTHOR dm_cyb | 2024
+#AUTHOR the-cyb3r-samurai | 2024
 
 
 chosen=0
