@@ -9,7 +9,7 @@
 #	./bulk_usr.sh <input_file>
 #		- <input_file>: A text file containing user details in the format:
 #		username:password:group:additional_info
-#		- Example: John_Doe:Password123:Redteam:John_Doe
+#		- Example: John:Password123:Redteam:John_Doe
 #
 #Requirements:
 #		- The script must be run with root priveleges (e.g., using sudo) to create users and groups.
