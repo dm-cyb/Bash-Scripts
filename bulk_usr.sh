@@ -40,7 +40,7 @@ while IFS=":" read -r username password group additional_info;do		if [[ -z $user
 	fi
 
 	echo "Processing user: $username"
-	echo "Group being processsed: '$group'"
+	echo "Processing group: '$group'"
 
 	if [[ -z "$group" ]];then
 		echo "Error: Group name is missing for user '$username'. Skipping."
@@ -60,7 +60,7 @@ while IFS=":" read -r username password group additional_info;do		if [[ -z $user
 		echo "Creating user: $username"
 		useradd -m -g "$group" -c "$additional_info" "$username"
 		if [[ $? -eq 0 ]];then
-			echo "$username:$password | chpasswd"
+			echo "$username:$password" | chpasswd -e
 			echo "User $username created successfully."
 		else
 			echo "Error: Failed to create user $username'."
